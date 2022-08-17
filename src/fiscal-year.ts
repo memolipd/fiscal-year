@@ -7,7 +7,7 @@ export interface FiscalYearStart {
 
 const JANUARY = 0;
 const NON_LEAP_YEAR = 2015;
-const monthYearFormat = (date: moment.Moment) => date.format('YYYY-MM-01');
+const monthYearFormat = (date: moment.Moment) => date.format('YYYY-MM-DD');
 
 const FiscalYear = (fiscalYearStart: FiscalYearStart) => {
   function getFiscalMonths(fiscalYear: number) {
